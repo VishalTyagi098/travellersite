@@ -1,5 +1,4 @@
 .locationwithoutprices-container{
-  border: 2px solid greenyellow;
   height: 65vh;
   width: 25vw;
   display: flex;
@@ -8,12 +7,11 @@
   background: url(../../images/san.jpg);
 }
 .small-container{
-  border: 2px solid red;
   background-color: white;
   color: black;
   border-radius: 40px;
   padding: 20px;
-  margin-bottom: 10px;
+  margin: 20px;
 }
 .small-container div{
   margin: 5px;
@@ -26,16 +24,17 @@
   font-size: 2rem;
 }
 .btn button{
-  color: black;
+  color: #ff385c;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #ff385c;
   border-radius: 40px;
   font-size: 17px;
   padding: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .btn button:hover{
   color: white;
-  background-color: black;
-  border: 2px solid white;
+  background-color: #ff385c;
+  border: 2px solid #ff385c;
 }

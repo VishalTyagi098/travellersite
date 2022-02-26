@@ -1,28 +1,25 @@
 .locationwithprices-container{
   width: 90vw;
   height: 50vh;
-  border: 2px solid blue;
   border-radius: 30px;
+  background-color: rgb(253, 239, 241);
   display: grid;
-  /* grid-template-areas:
-  'img column-2 column-3 column-3 column-3'; */
-  display: flex;
-  
+  grid-template-areas:
+  'img column-2 column-3'; 
 }
 /* column-1 */
 .locationwithprices-img{
-  border: 2px solid black;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   grid-area: img;
   overflow: hidden;
+  background: url(../../images/locationwithprices.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.locationwithprices-img img{
- 
-}
+
 /* column-2 */
 .column-2{
-  border: 2px solid blue;
   display: grid;
   grid-area: column-2;
   grid-template-areas:
@@ -35,7 +32,6 @@
     'extra';
 }
 .locationwithprices-title{
-  border: 2px solid red;
   grid-area: title;
   display: flex;
   justify-content: center;
@@ -45,7 +41,6 @@
 }
 
 .locationwithprices-desc{
-  border: 2px solid green;
   grid-area: desc;
   display: flex;
   flex-direction: column;
@@ -55,8 +50,10 @@
 
 /* extra */
 .locationwithprices-extra{
-  border: 2px solid black;
+  margin: 2% 20%;
   border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
   grid-area: extra;
   display: flex;
   justify-content: space-evenly;
@@ -68,6 +65,9 @@
   justify-content: center;
 }
 .extra-capacity{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,12 +93,10 @@
   'reserve';
 }
 .locationwithprices-prices{
-  border: 2px solid green;
   grid-area: prices;
 }
 
 .locationwithprices-reserve{
-  border: 2px solid yellow;
   grid-area: reserve;
 }
 
@@ -114,10 +112,13 @@
   grid-area: title;
   font-size: 0.8rem;
   text-align: center;
+  padding-top: 10px;
+  color: grey;
 }
 .reserve-price{
   grid-area: price;
   font-size: 2.5rem;
+  font-weight: 900;
   text-align: center;
 }
 .reserve-btn{
@@ -127,16 +128,16 @@
   align-items: center;
 }
 .reserve-btn button{
-  color: black;
-  background-color: white;
-  border: 2px solid black;
+  color: white;
+  background-color: #ff385c;
+  border: 2px solid #ff385c;
   border-radius: 40px;
-  font-size: 17px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 .reserve-btn button:hover{
-  color: white;
-  background-color: black;
-  border: 2px solid white;
+  color: #ff385c;
+  background-color: white;
 }

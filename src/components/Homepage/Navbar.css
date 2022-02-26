@@ -1,5 +1,4 @@
 .navbar-container {
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +6,6 @@
   background-color: black;
 }
 .navbar-list {
-  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;

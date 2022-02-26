@@ -11,12 +11,12 @@ export default function Gallery() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam totam aliquam laborum, voluptates mollitia incidunt tempore ut fugit veritatis assumenda iure eius, itaque modi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
       </div>
       <div className="gallery-photos">
-        <div className="photos1"></div>
-        <div className="photos2"></div>
-        <div className="photos3"></div>
-        <div className="photos4"></div>
-        <div className="photos5"></div>
-        <div className="photos6"></div>
+        <div className="photo photos1"></div>
+        <div className="photo photos2"></div>
+        <div className="photo photos3"></div>
+        <div className="photo photos4"></div>
+        <div className="photo photos5"></div>
+        <div className="photo photos6"></div>
       </div>
     </div>
   )

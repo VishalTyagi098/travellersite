@@ -6,6 +6,7 @@
 }
 .gallery-title{
   font-size: 3rem;
+  font-weight: 900;
 }
 .gallery-para{
   width: 70%;
@@ -14,15 +15,22 @@
 
 /* gallery photos */
 .gallery-photos{
-  border: 2px solid red;
   width: 80%;
   height: 80vh;
   display: grid;
   grid-template-areas: 
     'photo6 photo6 photo4 photo1'
     'photo5 photo3 photo4 photo2';
-
 }
+.photo{
+  transition: 1s ease;
+}
+.photo:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.5s ease;
+  }
 .photos1{
   background: url(../../images/gallery1.jpg);
   background-repeat: no-repeat;

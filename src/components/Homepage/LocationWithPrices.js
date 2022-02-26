@@ -9,7 +9,7 @@ function LocationWithPrices() {
     <div className="locationwithprices-container">
       {/* column-1 contains only img */}
       <div className="locationwithprices-img">
-        <img src={image} alt="" />
+        
       </div>
 
       {/* column-2 */}
