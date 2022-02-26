@@ -1,0 +1,18 @@
+.mainlocation-title{
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 900;
+}
+.mainlocation-para{
+  text-align: center;
+}
+.mainlocation-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid orange;
+}
+.mainlocation-location{
+  margin: 10px;
+}

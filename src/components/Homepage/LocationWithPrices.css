@@ -1,0 +1,142 @@
+.locationwithprices-container{
+  width: 90vw;
+  height: 50vh;
+  border: 2px solid blue;
+  border-radius: 30px;
+  display: grid;
+  /* grid-template-areas:
+  'img column-2 column-3 column-3 column-3'; */
+  display: flex;
+  
+}
+/* column-1 */
+.locationwithprices-img{
+  border: 2px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  grid-area: img;
+  overflow: hidden;
+}
+.locationwithprices-img img{
+ 
+}
+/* column-2 */
+.column-2{
+  border: 2px solid blue;
+  display: grid;
+  grid-area: column-2;
+  grid-template-areas:
+    'title'
+    'desc'
+    'desc'
+    'desc'
+    'desc'
+    'desc'
+    'extra';
+}
+.locationwithprices-title{
+  border: 2px solid red;
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.locationwithprices-desc{
+  border: 2px solid green;
+  grid-area: desc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* extra */
+.locationwithprices-extra{
+  border: 2px solid black;
+  border-radius: 40px;
+  grid-area: extra;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.extra-stay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extra-capacity{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extra-location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* column-3 */
+.column-3{
+  display: grid;
+  grid-area: column-3;
+  grid-template-areas:
+  'prices'
+  'prices'
+  'prices'
+  'prices'
+  'prices'
+  'prices'
+  'prices'
+  'reserve';
+}
+.locationwithprices-prices{
+  border: 2px solid green;
+  grid-area: prices;
+}
+
+.locationwithprices-reserve{
+  border: 2px solid yellow;
+  grid-area: reserve;
+}
+
+/* Reserve */
+.locationwithprices-reserve{
+  border-bottom-right-radius: 30px;
+  display: grid;
+  grid-template-areas:
+    'title btn'
+    'price btn';
+}
+.reserve-title{
+  grid-area: title;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.reserve-price{
+  grid-area: price;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.reserve-btn{
+  grid-area: btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reserve-btn button{
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 40px;
+  font-size: 17px;
+  padding: 10px;
+  cursor: pointer;
+}
+.reserve-btn button:hover{
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
